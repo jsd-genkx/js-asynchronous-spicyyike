@@ -1,5 +1,5 @@
 export const syncBlocking = () => {
-	const massiveNumber = 1_000_000_000n;
+	const massiveNumber = 1_000_000_000n; // n = datatype bigint
 
 	const simulateMassiveTask = (number) => {
 		let result = 0n;
@@ -22,6 +22,7 @@ export const syncBlocking = () => {
 	console.log(`Normal Task #2`);
 	simulateSimpleTask();
 	console.log(`Normal Task #3`);
+	console.log(Number.MAX_SAFE_INTEGER)
 };
 
-// syncBlocking();
+syncBlocking();
